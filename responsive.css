@@ -1,0 +1,476 @@
+@media screen and (max-width: 768px) {
+
+    .navbar.nav {background-image: linear-gradient(-65deg, #f0f0f5 5%, #fff 5% 11% , #f2f2f2 31%);}
+    [aria-controls=navbarDropdown] {
+        display: block;
+    }
+
+    [aria-expanded="false"] ~ ul,
+    [aria-expanded="false"] ~ .mobile-nav
+     {display: none;}
+
+    [aria-expanded="true"] ~ ul { display: block;}
+
+    [aria-expanded="true"] ~ .mobile-nav {display: flex;}
+     .mobile-nav {
+        position: absolute;
+        top: 55px;
+        background-color: #f0f0f5;
+        height: 100px;
+        width: 100%;
+        padding: 20px 0;
+        justify-content: center;
+    }
+
+    .mobile-nav a.btn {
+        position: absolute;
+        top: 50px;
+        right: 320px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro {margin-right: 1.25rem;}
+
+    .header h1 {text-align: center; }
+
+    .header a.btn {margin-left: 50px;}
+
+    
+    
+    .logo-box {width: 70% ;
+        margin-left: 3.6875rem;}
+
+    .benefits.container {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 3.75rem;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .card {
+        justify-content: center;
+        display: grid;
+        justify-self: flex-end;
+        height: 10.625rem;
+        width: 100%;
+    }
+
+    .card img { width: 20%;}
+
+    .card h5 {margin: 0;}
+
+    .card p {line-height: .95rem;}
+
+    .card p br { display: none;}
+
+    .card.two,
+    .card.four {justify-self: start;}
+    
+    .card.three h5 {margin-bottom: -25px;}
+    .three span { bottom:0}
+
+    .vision.container,
+    .vision-left {
+        flex-direction: column;
+        align-items: center;
+    }
+    .vision.container {height: 35.5625rem;;}
+    .vision-left { 
+        margin-top: 7.5rem;
+        display: flex;}
+
+    .vision-left h2 {margin-top: -7.5rem;}
+
+    div.vision img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .why h2 {
+        margin-left: 4.0625rem;
+        margin-top: 50px;
+
+    }
+    .why hr {width: 9.375rem;}
+
+    #sphere.container hr {width: 7.375rem;}
+
+    #front.container {
+        width: 90%;
+        margin-left: 32px;
+    }
+    .front1, .front2, .front3, .front4 {font-size: .9375rem;} 
+    .front1, .front2, .front3, .front4 {position: relative;}
+
+    .front1 {left: 12px;}
+    .front2 {left: 45px;}
+    .front3 {left: 70px;}
+    .front4 {left: 75px;}
+
+    img.play { top: 133rem;}
+
+    #promo.container {
+        width: 50%;
+        flex-direction: column;
+        margin: auto;
+        height: 30%;
+    }
+
+    img.dots {    
+        left: 45%;
+    height: 21.75rem;
+    top: 10px;}
+
+    img.woman1 {
+        left: -2%;
+        width: 90%;
+        height: 8%;
+        top: 10px;
+}
+    
+
+    .quote {
+        position: absolute;
+        width: 79%;
+        top: 700%;
+        display: grid;
+        right: 7%;
+       }
+
+        .quote img {
+            width: 15%;
+            left: 40%;}
+
+    .quote h4 {margin-top: 10.125rem;}
+    
+    .quote h4 br {display: none;}
+
+    .quote h5 {margin-top: 0;}
+
+    .quote h5, .quote h6 {  
+          justify-items: center;
+            display: grid;
+    }
+
+    #trust.container {margin-top: 15.1875rem;}
+
+    .trust h2 {margin-bottom: 0;}
+    .trust img {
+        width: 12%;
+        margin-top: 0;
+    }
+
+    div.pymt h3 {margin-top: 50px;}
+
+    .price-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-card .large {
+        width: 90%;
+        text-align: center;
+    }
+
+    .price-card .large br,
+    .hire-left p br {display: none }
+
+    .small-grid {width: 90%;}
+
+    #hire-us {flex-direction: column;}
+
+    .hire-us {
+        margin-left: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p.slacker {margin-bottom: 15px;}
+
+    div.hire-right {margin-left: 35px;}
+
+    .div.photos {margin-left: 5px;}
+    div.photos img {
+        width: 10%;
+        height: 10%;
+    }
+
+    img#man {
+        position: initial;
+        width: 15%;
+    }
+
+    div.form {width: 90%;}
+
+    div.form form input,
+    div.form form select#budget,
+    div.form form select#country { width: 45%;}
+    div.form textarea {width: 90%;}
+    
+    div.check {
+        display: flex;
+        justify-content: flex-start;
+        width: 90%;
+        margin: auto;
+    }
+
+    input#marketing {width: 25px;
+        margin-top: -8px;
+    }
+
+    div.check label br {display: none;} 
+
+    .footer-top {margin: auto;}
+
+    .about-left {margin-right: 25px;}
+
+    .about-right { 
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;}
+
+    }
+
+
+/* Mobile */
+
+@media screen and (max-width: 640px) {
+    .navbar.nav {background-image: linear-gradient(-65deg, #f0f0f5 5%, #fff 5% 11% , #f2f2f2 31%);}
+    [aria-controls=navbarDropdown] {
+        display: block;
+    }
+
+    [aria-expanded="false"] ~ ul,
+    [aria-expanded="false"] ~ .mobile-nav
+     {display: none;}
+
+    [aria-expanded="true"] ~ ul { display: block;}
+
+    [aria-expanded="true"] ~ .mobile-nav {display: flex;}
+
+    .mobile-nav {
+        flex-direction: column;
+        height: 16.25rem;
+    }
+
+    .mobile-nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4.375rem;
+    }
+
+    .mobile-nav ul a.btn {
+        top: 195px;
+        right: 235px;
+    }
+    
+    div.logo-box {margin-right: 18%;}
+
+    section.key p {
+        width: 100%;
+        margin-top: 0;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    div.container.benefits {
+        width: 70%;
+        grid-template-columns: 1fr;
+    }
+
+    .card, .card.two, .card.three, .card.four {justify-self: center;}
+
+    div.card {
+        height: 13.625rem;
+        width:  22.3125rem;
+    }
+
+    div.card p {margin: 0;}
+    div.card p br {display: none;}
+    div.card a {margin-top: -0.3125rem;}
+
+    .three span {
+        bottom: 11px;
+    }
+
+    div#sphere.container {margin-top: 0.125rem;}
+    div#sphere {  
+        position: relative;
+        left: 94px;  
+        flex-direction: column;
+        gap: 25px;
+        display: flex;
+        top: 50px;
+    }
+
+    div#sphere hr, 
+    section.why p br {display: none;}
+
+    section.why p  {    
+        width: 90%;
+        margin: 0 auto;}
+
+          
+    div#front.container {
+        flex-direction: column;
+        bottom: 275px;
+        margin-top: 50px;
+        width: 50%;
+        margin: 42px 150px;
+    }
+
+    .front2 {
+        position: relative;
+        top: 5px;
+        left: 0rem;
+    }
+
+    .front3 {
+        position: relative;
+        left: 40px;
+        top: 1.375rem;
+    }
+
+    .front4 {
+        position: relative;
+        top: 35px;
+        left: 0rem;
+    }
+
+    img.map {margin-top: -16.5625rem;}
+
+    img.play {top: 176rem;}
+        
+    img.dots {
+    left: 49%;
+    height: 18.75rem;
+    top: 10px;
+    }
+
+    img.woman1 {
+    left: -2%;
+    width: 100%;
+    height: 8%;
+    top: 10px;
+    }
+
+    .quote img.hub {
+        top: 9.125rem;
+        width: 22%;
+    }
+
+    div.quote {top: 835vh;}
+
+    #trust.container {margin-top: 16.1875rem;}
+    div.trust {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .trust img {width: 25%;}
+
+    div.small-grid {
+        width: 80% ;
+        grid-template-columns: 1fr;
+    }
+    #hire-us.container {margin-top: 0.25rem;}
+
+    #hire-us.container hr {
+        width: 90%;
+        float: initial;
+        margin-bottom: -10px
+
+    }
+
+    
+    div.hire-us {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+        padding-top: 1px;
+        margin-top: 0.6875rem;
+    }
+
+    .hire-left p br {display: initial;}
+
+    div.hire-right {margin-left: 0;}
+
+   .hire-right div.photos {justify-content: center;}
+
+   div.form {
+        width: 60%;
+        margin: auto;
+        margin-top: 25px;
+   }
+
+   div.form form h4 br {display: none;}
+
+   div.form form input {width: 85%;}
+
+   a.priv {display: none;}
+
+   div.footer-top {display: block;}
+
+   div.footer-top img {
+        display: inline-block;        
+        width: 60%;
+    }
+
+   
+
+   div.about-left {    
+        margin: auto;
+        text-align: center;
+            }
+
+    div.about-left p {
+        width: 200px;
+        display: inline-block;
+        position: relative;
+        right: 20px;
+    }
+
+   div.about-right {grid-template-columns: 1fr;}
+
+
+   .about.docs {margin-left: 2.6875rem;}
+
+   div.footer-bottom {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+   }
+
+   div.footer-bottom div.right {
+    margin-right: -42px;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+    div.right ul {line-height: 16px;}
+
+    div.right select {margin-right: 25px;}
+
+    div.footer-text {
+        width: 50%;
+        margin-left: 45px;}
+
+    div.footer-text br {display: none;}
+
+    }
+
+    
+
+      
+       
+    
+
+    
