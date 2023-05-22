@@ -7,7 +7,7 @@
     width: 100%;
     align-items: center;
     z-index: 500;
-    background-image: linear-gradient(-65deg, #f0f0f5 22%, #fff 22% 11% , #f2f2f2 31%);
+    background-image: linear-gradient(-65deg, #f0f0f5 26%, #fff 22% 11% , #f2f2f2 31%);
 }
 
 .navbar-toggler {
@@ -38,7 +38,7 @@
     gap: .9375rem;
     font-weight: 400;
     font-size: var(--size-14);
-    margin-right: var(--size-20);
+    margin-right: var(--size-50);
 }
 
 .navbar ul>li a:hover { color:var(--link)}
@@ -47,7 +47,7 @@
 
 .container.header {
     display:flex;
-    margin-top: var(--size-30);
+    margin: 71px auto 0 auto;
 }
 
 .header h1 {
@@ -55,7 +55,11 @@
     margin-bottom: .3125rem;
 }
 
-.intro {margin-left: var(--size-20);}
+.intro {
+    margin-left: var(--size-20);
+    width: 40%;
+    text-align: center;
+}
 .header p { font-size: var(--size-12);}
 .header  .link {
     color: var(--link);
@@ -67,11 +71,12 @@
 .logo-box {
     margin-top: var(--size-50);
     display: grid;
+    justify-items: end;
     row-gap: var(--size-20);
     grid-template-columns: repeat( auto-fill, minmax(110px, 1fr));;
     grid-template-rows: repeat(3, 1fr);
     width: 50%;
-    margin-left: var(--size-150);
+    margin-left: auto;
     grid-template-areas: 
     "logo1 logo2 .. logo3"
     "logo4 .. logo5 .."
@@ -109,7 +114,7 @@
 
 .bg-header {
     background-image: url(./saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg);
-    background: conic-gradient(at 66% 84%, #F2F2F2 0, white 26deg, #f0f0f5 26deg, #f0f0f5 80deg, white 77deg, white 263deg, #f2f2f2 262deg, #F2F2F5 276deg);}
+    background: conic-gradient(at 66% 84%, #F2F2F2 0, white 27deg, #f0f0f5 28deg, #f0f0f5 80deg, white 77deg, white 263deg, #f2f2f2 262deg, #F2F2F5 276deg);}
 
 
 .key,
@@ -127,6 +132,7 @@
 
 .benefits.container {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px   ;
     margin-bottom: 3.75rem;
@@ -221,8 +227,8 @@ div.vision img {
 }
 
 div.ball {
-    height: 3.125rem;
-    width: 3.125rem;
+    height: 5.125rem;
+    width: 5.125rem;
     background:  #e6e6ff;
     border-radius: 50%;
     display: flex;
@@ -246,7 +252,7 @@ div.dot{
 #sphere hr {
     height: .0625rem;
     align-self: center;
-    width: 10.375rem;
+    width: 14.375rem;
     display: inline;
     margin: 0;
 }
@@ -258,7 +264,16 @@ div.dot{
     margin-left: 3.5rem;
 }
 
-#front.container:nth-child(4){
+.front2{
+    position: relative;
+    left: 20px;
+}
+
+.front3 {
+    position: relative;
+    left: 10px;
+}
+    #front.container:nth-child(4){
     position: relative;
     right: 1.4375rem;
 }
@@ -300,7 +315,10 @@ img.hub {
     top: 3.125rem;
 }
 
-.quote {padding-right: var(--size-10);}
+.quote {
+    padding-right: var(--size-10);
+    margin-right: 125px;
+}
 .quote h4 {
     margin-top: 4.125rem;
     color:black;
@@ -400,7 +418,7 @@ img.play {
     width: 7%;
     position: absolute;
     left: 50%;
-    top: 98rem;
+    top: 110rem;
     border: 1px solid transparent;
     border-radius: 50%;
     box-shadow: 0px 0px 10px;
@@ -417,7 +435,7 @@ img.play {
 
 div.hire-us {
     margin-top: 4.6875rem;
-    margin-left: var(--size-50);
+    margin-left: var(--size-100);
 }
 
 #hire-us.container h3,
@@ -457,7 +475,7 @@ div.photos img {
 img#man {
     position: absolute;
     width: 5%;
-    left: 186px;
+    left: 227px;
 }
 
 div.form {
@@ -468,7 +486,7 @@ div.form {
     text-align: center;
     border-radius: 10px;
     margin: 25px;
-    
+    margin-right: 50px;
 
 }
 
@@ -479,13 +497,19 @@ div.form h4 {
 }
 div.form input,
 select#budget,
-select#country {height: 1.875rem;}
+select#country {
+    height: 1.875rem;
+    margin: 15px ;
+    border: 1px solid;
+}
 
 select#budget,
 select#country {
     width: 10.625rem;
     position: relative;
     font-weight: bold;
+    
+
 }
 
 .form textarea {
@@ -606,7 +630,7 @@ div.right select {
     display: flex;
     position: fixed;
     bottom: 10px;
-    right: 20px;
+    right: 50px;
     justify-content: center;
     align-items: center;
 }    
