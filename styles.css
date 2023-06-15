@@ -28,6 +28,7 @@
     transition: ease-in-out 0.3s;
 }
 
+div.mobile-nav {flex-grow: 0;}
 .navbar img {
     width: 50%;
     padding-left: 1.5625rem;
@@ -47,7 +48,7 @@
 
 .container.header {
     display:flex;
-    margin: 71px auto 0 auto;
+    margin: 53px auto 0 auto;
 }
 
 .header h1 {
@@ -283,6 +284,16 @@ img.map {
     margin: 3.125rem;
 }
 
+img.play {
+    width: 7%;
+    position: absolute;
+    left: 50%;
+    top: 107rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px;
+}
+
 #promo.container {
     display: flex;
     margin-top: 110px;
@@ -414,15 +425,7 @@ div.large a {
     bottom: .125rem;
   }
 
-img.play {
-    width: 7%;
-    position: absolute;
-    left: 50%;
-    top: 110rem;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px;
-}
+
 
 #hire-us.container {
     background-color: hsl(230, 100%, 20%);
@@ -441,14 +444,15 @@ div.hire-us {
 #hire-us.container h3,
 #hire-us.container h4  {margin-bottom: 0;}
 
+#hire-us.container h4 {text-align: center;}
+
 #hire-us.container span {
     font-size: 14px;
     color: var(--font-light);
 }
 
 #hire-us.container hr {
-    width: 30%;
-    float: left;
+    width: 80%;
 
 }
 
@@ -457,6 +461,9 @@ div.hire-us {
     font-size: .75rem;
 }
 
+p.slacker {text-align: center;}
+
+.hire-left {text-align:center;}
 .slacker{
     margin-top: 0;
     margin-bottom: 50px;
@@ -465,17 +472,18 @@ div.hire-us {
 div.photos {
     display: flex;
     gap: .625rem;
+    margin-left: 40px;
 }
 
 div.photos img {
-    width: 15%;
+    width: 25%;
     border-radius: 50%;
 }
 
 img#man {
     position: absolute;
     width: 5%;
-    left: 227px;
+    left: 300px;
 }
 
 div.form {
@@ -515,6 +523,8 @@ select#country {
 .form textarea {
     width: 75%;
     font-family: 'Roboto', sans-serif;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 input#marketing {
